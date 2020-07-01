@@ -1,0 +1,26 @@
+{
+  "name": "applitools-testing-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon.git"
+  },
+  "author": "Chiu Wei Bin",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.12.1",
+    "cypress": "^4.9.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon/issues"
+  },
+  "homepage": "https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon#readme",
+  "dependencies": {
+    "eslint-plugin-cypress": "^2.11.1"
+  }
+}
