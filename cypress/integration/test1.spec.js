@@ -29,31 +29,33 @@ describe("Task 1", () => {
     cy.eyesCheckWindow({
       tag: "first page",
       // target: "region",
-      //fully: true,
+      fully: true,
     });
 
-    cy.get("product_grid").children.then(() => {});
-    cy.get("product_grid").children.eq(i);
+    // cy.get("#product_grid").children().its("length").as("productItemCount");
+    // cy.get("@productItemCount").then(($length) => {
+    //   const productItemCount = $length;
+    //   const productItemCountForTagname = $length + 1;
+    //   for (var i = 0; i < productItemCount; i++) {
+    //     cy.get("#product_grid").children().eq(i).scrollIntoView();
+    //     const tagname = "Item " + i;
+    //     const cssSelector = "#product_grid>div:nth-child(" + i + ")";
+    //     cy.eyesCheckWindow({
+    //       tag: tagname,
+    //       // target: "region",
+    //       // selector: {
+    //       //   type: "css",
+    //       //   selector: cssSelector, // or '//button'
+    //       // },
+    //     });
+    //   }
+    // });
 
-    // Check the app page
-    cy.eyesCheckWindow({
-      tag: "first row of the products",
-      //target: "region",
-      //fully: true,
-    });
-
-    cy.get("#IMG__imgfluid__375").scrollIntoView();
-    cy.eyesCheckWindow({
-      tag: "third row of the product",
-      // target: "region",
-      //fully: true,
-    });
-
-    cy.get("#FOOTER____417").scrollIntoView();
-    cy.eyesCheckWindow({
-      tag: "footer",
-      //target: "region",
-      // /fully: true,
-    });
+    // cy.get("footer").scrollIntoView();
+    // cy.eyesCheckWindow({
+    //   tag: "footer",
+    //   //target: "region",
+    //   // /fully: true,
+    // });
   });
 });

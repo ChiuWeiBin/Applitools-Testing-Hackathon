@@ -20,6 +20,7 @@ const browserCombo = [
 
 const appName = " Applitools UltraFastGrid | Cross Browser Testing Demo App";
 const batchName = "UFG Hackathon";
+const testName = "Ultrafast grid demo";
 
 function eyesCheck(params) {
   cy.eyesOpen({
