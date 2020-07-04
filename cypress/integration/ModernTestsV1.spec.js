@@ -14,13 +14,13 @@ const browserCombo = [
   { width: 768, height: 700, name: "chrome" },
   { width: 768, height: 700, name: "firefox" },
   { width: 768, height: 700, name: "edgechromium" },
-  // Add mobile emulation devices in Portrait mode
   { deviceName: "iPhone X", screenOrientation: "portrait" },
 ];
 
-const appName = " Applitools UltraFastGrid | Cross Browser Testing Demo App";
+const appName = "AppliFashion";
 const batchName = "UFG Hackathon";
-const testName = "Ultrafast grid demo";
+const testName = "Task 1";
+const stepName = "Cross-Device Elements Test";
 
 function eyesCheck(params) {
   cy.eyesOpen({
@@ -30,22 +30,17 @@ function eyesCheck(params) {
     browser: browserCombo,
   });
 
-  if (params.target != "region") {
-    cy.eyesCheckWindow(params.testName);
-  } else {
-    cy.eyesCheckWindow({
-      tag: params.testName,
-      target: "region",
-      selector: params.selector,
-    });
-  }
+  cy.eyesCheckWindow({
+    tag: stepName,
+  });
 
   cy.eyesClose();
 }
 
-describe("Cross-Browser Tests", () => {
-  it(`test Layout`, function () {
+describe("AppliFashion", () => {
+  it(`Task 1`, function () {
     cy.visit("/gridHackathonV1.html");
+    //cy.visit("/gridHackathonV2.html");
     eyesCheck({ testName: this.test.title });
   });
 });
