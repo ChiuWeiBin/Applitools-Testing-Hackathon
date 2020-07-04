@@ -11,27 +11,44 @@ Before you begin, ensure you have met the following requirements:
 
 ## How to run the test
 
-To run the test, follow these steps:
+To run the test, run these command in the terminal:
 
-Installing the dependencies:
+Step 1 - Installing the dependencies:
 
 ```
 npm i
 ```
 
-Open Cypress Test Runner
+Step 2 - Configuring the Applitools Eyes SDK for Cypress
+
+```
+npx eyes-setup
+```
+
+Step 3 - Open Cypress Test Runner
 
 ```
 npx cypress open
 ```
 
-1. Select [ModernTestsV1.spec.js](https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon/blob/master/cypress/integration/ModernTestsV1.spec.js) in the test runner for generating baseline images in `Applitools`
+- Select [ModernTestsV1.spec.js](https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon/blob/master/cypress/integration/ModernTestsV1.spec.js) in the test runner for generating baseline images in `Applitools`
 
-2. Select [ModernTestsV2.spec.js](https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon/blob/master/cypress/integration/ModernTestsV2.spec.js) in the test runner for generating checkpoint in `Applitools`
+- Select [ModernTestsV2.spec.js](https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon/blob/master/cypress/integration/ModernTestsV2.spec.js) in the test runner for generating checkpoint in `Applitools`
 
 ## Test Result
 
 [Eyes Batch Results URL](https://eyes.applitools.com/app/test-results/00000251808435681711?accountId=3iKH871PoUG0uwPaUaWWNw~~&display=gallery&top=00000251808435681711%283%29)
+
+## Credits
+
+This test uses the following packages:
+
+- [Cypress](https://www.npmjs.com/package/cypress)
+- [Eyes-Cypress](https://www.npmjs.com/package/@applitools/eyes-cypress)
+
+## Related
+
+[Applitools Cross Browser Testing Hackathon Homepage](https://applitools.com/cross-browser-testing-hackathon-v20-1-instructions/?utm_campaign=Ultrafast-Cross-Browser-Testing-Hackathon)
 
 ## Contact
 
