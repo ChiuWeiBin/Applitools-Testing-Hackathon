@@ -33,7 +33,10 @@ npx cypress open
 
 - Select [ModernTestsV1.spec.js](https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon/blob/master/cypress/integration/ModernTestsV1.spec.js) in the test runner for generating baseline images in `Applitools`
 
+  - [Link to the website](https://demo.applitools.com/gridHackathonV1.html)
+
 - Select [ModernTestsV2.spec.js](https://github.com/ChiuWeiBin/Applitools-Testing-Hackathon/blob/master/cypress/integration/ModernTestsV2.spec.js) in the test runner for generating checkpoint in `Applitools`
+  - [Link to the website- AUT (Application Under Test)](https://demo.applitools.com/gridHackathonV2.html)
 
 ## Test Result
 
